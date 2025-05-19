@@ -1,4 +1,4 @@
-artikel = [] # Liste wird erstellt
+artikel = ["Fernseher", "Tisch", "Proteinpulver", "Salz", "Pfeffer", "Pfanne", "Eis", "Schuhe", "Monopoly"] # Liste wird erstellt
 print("Willkommen bei der Leih- und Tauschbörse!")
 wahl = input("Möchtest du einen Artikel hinzufügen, leihen oder tauschen? Dann gib das entsprechende Wort ein: ")
 
