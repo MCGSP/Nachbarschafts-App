@@ -1,6 +1,6 @@
 artikel = ["Fernseher", "Tisch", "Pulli", "Salz", "Pfeffer", "Pfanne", "Stuhl", "Schuhe", "Monopoly", "Rucksack"] # Liste wird erstellt
 print("Willkommen bei der Leih- und Tauschbörse!")
-wahl = input("Möchtest du einen Artikel hinzufügen, leihen oder tauschen? Dann gib das entsprechende Wort ein: ")
+wahl = input("Möchtest du einen Artikel hinzufügen, leihen oder tauschen? Dann gib den jeweiligen Anfangsbuchstaben ein: ")
 
 while wahl != "x": # Schleife die sich nur bei der Eingabe "x" vom Benutzer beendet
     if wahl == "hinzufügen":
