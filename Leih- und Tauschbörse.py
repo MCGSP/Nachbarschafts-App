@@ -1,4 +1,4 @@
-artikel = ["Fernseher", "Tisch", "Proteinpulver", "Salz", "Pfeffer", "Pfanne", "Eis", "Schuhe", "Monopoly"] # Liste wird erstellt
+artikel = ["Fernseher", "Tisch", "Pulli", "Salz", "Pfeffer", "Pfanne", "Stuhl", "Schuhe", "Monopoly", "Rucksack"] # Liste wird erstellt
 print("Willkommen bei der Leih- und Tauschbörse!")
 wahl = input("Möchtest du einen Artikel hinzufügen, leihen oder tauschen? Dann gib das entsprechende Wort ein: ")
 
@@ -9,21 +9,21 @@ while wahl != "x": # Schleife die sich nur bei der Eingabe "x" vom Benutzer been
         
     elif wahl == "leihen":
         print("Diese Artikel sind verfügbar:")
-        for i in range(0, len(artikel)): # Zählschleife um alle Artikel anzuzeigen
-            print(artikel[i])
+        for a in artikel: # Zählschleife um alle Artikel anzuzeigen
+            print(a)
         artikelLeihen = input("Welchen möchtest du leihen?: ")
-        for i in range(0, len(artikel)):
-            if artikel[i] == artikelLeihen: # Jeder Durchgang der Zählschleife prüft einen Artikel in der Liste,
-                artikel.pop(i)              # ob er der vom Benutzer ausgeliehene Artikel ist und entfernt ihn dann
+        for b in artikel:
+            if b == artikelLeihen: # Jeder Durchgang der Zählschleife prüft einen Artikel in der Liste,
+                artikel.remove(b)  # ob er der vom Benutzer ausgeliehene Artikel ist und entfernt ihn dann
         
     elif wahl == "tauschen":
         print("Diese Artikel sind verfügbar:")
-        for i in range(0, len(artikel)): # Zählschleife um alle Artikel anzuzeigen
-            print(artikel[i])
+        for a in artikel: # Zählschleife um alle Artikel anzuzeigen
+            print(a)
         eintauschArtikel = input("Welchen Artikel gibst du ab?: ")
         artikelTausch = input("Und welchen Artikel nimmst du dafür?: ")
-        for i in range(0, len(artikel)):
-            if artikel[i] == eintauschArtikel: # Wieder eine prüfende Zählschleife, nur wird
-                artikel[i] = artikelTausch     # hier dann der Artikel durch einen neuen ersetzt
+        for c in artikel:
+            if c == artikelTausch: # Wieder eine prüfende Zählschleife, nur wird
+                c = artikelTausch  # hier dann der Artikel durch einen neuen ersetzt
     
     wahl = input("Möchtest du noch einen Artikel hinzufügen, leihen oder tauschen? Gib andernfalls x ein um das Programm zu beenden: ")
