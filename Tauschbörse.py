@@ -16,7 +16,7 @@ while wahl != "x": # Schleife die sich nur bei der Eingabe "x" vom Benutzer been
         for b in artikel:
             if b == artikelLeihen: # Jeder Durchgang der Zählschleife prüft mithilfe einer Variable einen Artikel in
                 artikel.remove(b)# der Liste, ob er der vom Benutzer ausgeliehene Artikel ist und entfernt ihn dann
-        print("Der/die " + str(artikelLeihen) + " gehört ab jetzt für eine gewisse Zeit dir.")
+        print("Der/die/das " + str(artikelLeihen) + " gehört ab jetzt für eine gewisse Zeit dir.")
         
     elif wahl == "t" or wahl == "T":
         print("Diese Artikel sind verfügbar:")
